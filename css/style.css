@@ -721,7 +721,7 @@ iframe {
 }
 
 .login__box {
-    width: calc(30%);
+    min-width: 50rem;
     margin: 0 auto;
     box-shadow: 0 0 .5rem 0 #ccc;
     padding: 3rem 2rem;
@@ -861,7 +861,7 @@ footer {
         align-items: center;
     }
     .login__box {
-        width: calc(50%);
+        min-width: 50%;
         margin: 0 auto;
         box-shadow: 0 0 .5rem 0 #ccc;
         padding: 3rem 2rem;
@@ -1056,7 +1056,7 @@ footer {
         align-items: center;
     }
     .login__box {
-        width: calc(90%);
+        min-width: 90%;
         margin: 0 auto;
         box-shadow: 0 0 .5rem 0 #ccc;
         padding: 3rem 2rem;
