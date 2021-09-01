@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>NIEC</title>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b9b35f3ec9.js" crossorigin="anonymous"></script>
+
+    <!-- stylelsheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header__top">
+            <div class="header__top--info">
+                <ul>
+                    <li><a href="telto:+977-9801030907"><i class="fas fa-phone-alt"></i> +977-9801030907</a></li>
+                    <li><a href="mailto:info@niec.edu.np"><i class="fas fa-envelope"></i> info@niec.edu.np</a></li>
+                </ul>
+            </div>
+            <div class="header__top--links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="header__nav">
+            <div class="nav__logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="nav__items">
+                <ul>
+                    <li id="mobile-cross"><a href="javascript:void(0)" onclick="closeMenu()"><i
+                                class="far fa-times-circle"></i></a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="testPreparation.html">Test Preparation</a></li>
+                    <li><a href="studyAbroad.html">Study Abroad</a></li>
+                    <li><a href="scholarships.html">Scholarships</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainSection">
+        <div class="slider">
+            <div class="slider__container">
+                <img src="images/slide1.jpg" alt="slide1" class="slider__image">
+                <div class="slider__caption">Caption Text 1</div>
+            </div>
+            <div class="slider__container">
+                <img src="images/slide2.jpg" alt="slide2" class="slider__image">
+                <div class="slider__caption">Caption Text 2</div>
+            </div>
+            <div class="slider__container">
+                <img src="images/slide3.jpg" alt="slide3" class="slider__image">
+                <div class="slider__caption">Caption Text 3</div>
+            </div>
+            <div class="slider__container">
+                <img src="images/slide4.jpg" alt="slide4" class="slider__image">
+                <div class="slider__caption">Caption Text 4</div>
+            </div>
+            <span class="slider__prev arrow" onclick="controller(-1)">&#10094;</span>
+            <span class="slider__next arrow" onclick="controller(1)">&#10095;</span>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="card__container">
+                    <i class="fas fa-globe-americas card__icon"></i>
+                    <p class="card__content"><span class="card__title">Abroad Study</span><br>Once the students have sat for their final exam at various local testing centers and also NIEC counsels prospective students for their higher education in foreign countries.</p>
+                    <button type="submit" class="card__button"><a href="#">Read More</a></button>
+                </div>
+                <div class="card__container">
+                    <i class="fas fa-file-alt card__icon"></i>
+                    <p class="card__content"><span class="card__title">Test Preparation</span><br>Thousands of students choose to study with us every year and they have achieved great success. Join our test preparation courses and unleash your real potentials!</p>
+                    <button type="submit" class="card__button"><a href="#">Read More</a></button>
+                </div>
+                <div class="card__container">
+                    <i class="fas fa-book-open card__icon"></i>
+                    <p class="card__content"><span class="card__title">E-Library & E-Testing</span><br>Our E-Library gives you the luxury of practice from the comfort of your home and our E-testing Center gives you access to tests from the comfort of your home.</p>
+                    <button type="submit" class="card__button"><a href="#">Read More</a></button>
+                </div>
+            </div>
+            <div class="services__container">
+                <p class="services__title">Nepal's Number One <br> Educational Consultancy</p>
+                <p class="services__content">NIEC is a provider of short term exam preparation for exams like TOEFL, IELTS, SAT 1, GRE and GMAT. NIEC is a study abroad consultancy that represents institutions around the world and places students in these institutions.</p>
+            </div>
+        </div>
+        <div class="abroad_study">
+            <div class="study_abroad">
+                <p class="study_abroad__title">Study Abroad</p>
+                <p class="study_abroad__content">Once the students take their final exams at various local testing centers, NIEC counsels prospective students for their higher education in popular study destinations like Australia, USA, UK, Canada, New Zealand and Ireland. Selecting
+                    the right college/ university and course is usually very challenging for students but our well trained counselors provide you with all the necessary information including application procedures, entry requirements, immigration rules
+                    and visa application procedures. NIEC’s study abroad counselors undergo an intensive training before they are delegated to provide any information on college/ universities or visa application processes.
+                </p>
+            </div>
+            <div class="canada">
+                <p class="canada__title">Study in Canada</p>
+            </div>
+            <div class="newZealand">
+                <p class="newZealand__title">Study in New Zealand</p>
+            </div>
+            <div class="ireland">
+                <p class="ireland__title">Study in Ireland</p>
+            </div>
+            <div class="uk">
+                <p class="uk__title">Study in U.K</p>
+            </div>
+            <div class="usa">
+                <p class="usa__title">Study in USA</p>
+            </div>
+            <div class="australia">
+                <p class="australia__title">Study in Australia</p>
+            </div>
+        </div>
+        <div class="test_preparation">
+            <div class="test_preparation__content">
+                <p class="content__title">Test Preparation</p>
+                <p class="content__description">Higher education is an integral part of a student’s life and pursuing higher education in abroad countries has become a popular trend. As an international student seeking to study abroad, there are various admission prerequisites to consider.
+                    <br> We prepare students for the following programmes:
+                </p>
+            </div>
+            <div class="test_preparation__gallery">
+                <div class="ielts">
+                    <p class="gallery__title">IELTS</p>
+                </div>
+                <div class="toefl">
+                    <p class="gallery__title">TOEFL</p>
+                </div>
+                <div class="pte">
+                    <p class="gallery__title">PTE-A</p>
+
+                </div>
+                <div class="sat">
+                    <p class="gallery__title">SAT-1</p>
+
+                </div>
+                <div class="gmat">
+                    <p class="gallery__title">GMAT</p>
+
+                </div>
+                <div class="gre">
+                    <p class="gallery__title">GRE</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="testimonial">
+            <div class="testimonial__title">Testimonials</div>
+            <div class="testimonial__content">
+                <div class="student__description">
+                    NIEC will always be my best memory and I believe each and every student will find their way of success through this institution. <br>
+                </div>
+                <div class="student__img">
+                    <img src="images/student1.jpg" alt="student">
+                </div>
+                <div class="student_info">
+                    <span class="student__name">Tenzin Kelsang Tamang</span><br>
+                    <span class="student__university">Truman State University | Scholarship $8000</span>
+                </div>
+            </div>
+            <div class="testimonial__content">
+                <div class="student__description">
+                    NIEC is really helpful and supportive. Come to NIEC if you wish to go for your further studies.
+                    <br> Thank you.
+                    <br>
+                </div>
+                <div class="student__img">
+                    <img src="images/student2.jpg" alt="student">
+                </div>
+                <div class="student_info">
+                    <span class="student__name">Manish Ghimire</span><br>
+                    <span class="student__university">University of Toledo | Scholarship $13,500</span>
+                </div>
+            </div>
+            <div class="testimonial__content">
+                <div class="student__description">
+                    Dear future students,
+                    <br> The suggestions and help that NIEC provides are really praise worthy. It is the place where you can shape your future. Please come here and get their service you will find it really helpful.
+                    <br>
+                </div>
+                <div class="student__img">
+                    <img src="images/student3.jpg" alt="student">
+                </div>
+                <div class="student_info">
+                    <span class="student__name">Tenzin Kelsang Tamang</span><br>
+                    <span class="student__university">Whitman College | Scholarship $59,000</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact__office">
+                <details>
+                    <summary>NIEC Head Office (Kathmandu)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details>
+                    <summary>NIEC Center (Maharajgunj)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details>
+                    <summary>NIEC Center (Pokhara)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details>
+                    <summary>NIEC Center (Chitwan)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details>
+                    <summary>NIEC Center (Biratnagar)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details>
+                    <summary>NIEC Center (Butwal)
+                        <hr>
+                    </summary>
+                    <div class="office_info">
+                        <div class="info">
+                            <p><span class="info__title">Hours of Operation:
+                                    <hr>
+                                </span>Sunday to Friday <br> 7:00 am - 6:00 pm</p>
+                            <p><span class="info__inquiries">General Inquiries:
+                                    <hr>
+                                </span>P: +977-01-4256600 <br> P: +977-980103907 <br> E: info@niec.edu.np</p>
+                            <p><span class="info__address">Address:
+                                    <hr>4th Floor ShareMarket Complex, Putalisadak,
+                                    Kathmandu, Nepal.
+                                </span></p>
+                        </div>
+                        <div class="office__map">
+                            <p class="map__title">Google Map:
+                                <hr>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456205590923!2d85.32047061552564!3d27.703197382793576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sPutalisadak%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1630075637280!5m2!1sen!2snp"
+                                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="contact__query">
+                <form action="" method="POST">
+                    <p class="form__title">GET IN TOUCH</p>
+                    <p>If you have any queries</p>
+                    <div class="form-group">
+                        <input type="text" name="name" id="uname" placeholder="Enter Your full name" required>
+                        <p>Please enter your first and last name separated by a space (e.g. Jane Miller)</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="contact" id="contact" placeholder="Enter Your contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Enter Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="10" placeholder="Enter Your message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send message">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="members">
+            <div class="memebers__title">Member Associates</div>
+            <div class="members__images">
+                <img src="images/ecan.png" alt="ecan">
+                <img src="images/icef.png" alt="icef">
+                <img src="images/iso-logo.png" alt="iso">
+                <img src="images/nepal.png" alt="nepal">
+                <img src="images/pier.png" alt="pier">
+                <img src="images/USATC.png" alt="usatc">
+                <img src="images/enz.jpg" alt="enz">
+                <img src="images/toefl.png" alt="toefl">
+                <img src="images/pte.png" alt="pte">
+                <img src="images/british.jpg" alt="british">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__content">
+            <p>Web Development & Front-End Development</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
