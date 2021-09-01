@@ -72,6 +72,10 @@
     transition: .3s ease-in-out;
 }
 
+#nav__items ul .nav__links--active a {
+    color: #F37A28;
+}
+
 #nav__items #mobile-cross {
     display: none;
 }
@@ -616,11 +620,8 @@ iframe {
 .blog__posts {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 3rem;
-}
-
-.blog__categories {
-    background-color: yellow;
 }
 
 .blog__box {
@@ -648,7 +649,6 @@ iframe {
 
 .description__title {
     font-size: 2rem;
-    /* line-height: 4rem; */
 }
 
 .blog__description .card__button:hover {
@@ -689,6 +689,36 @@ iframe {
 
 .card__pagination ul li {
     list-style: none;
+}
+
+.recentPost__title,
+.categories__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.categories__title {
+    margin-top: 3.5rem;
+}
+
+.recentPost__links li,
+.categories__links li {
+    list-style: none;
+    padding: 1.2rem 0;
+    border-bottom: solid 1px #f8883d;
+}
+
+.recentPost__links li a:link,
+.categories__links li a:link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f8883d;
+}
+
+.recentPost__links li a:hover,
+.categories__links li a:hover {
+    color: #2382db;
+    transition: all .3s ease-in-out;
 }
 
 
@@ -818,7 +848,9 @@ footer {
     .testimonial,
     .contact,
     .members,
-    .contactHeader__title {
+    .contactHeader__title,
+    .blog__content,
+    .blog__title {
         width: calc(100% - 20rem);
     }
     /* study abroad section */
@@ -902,6 +934,9 @@ footer {
         color: #f1ddcf;
         transition: .3s ease-in-out;
     }
+    #nav__items ul .nav__links--active a {
+        color: #fff;
+    }
     #nav__items #mobile-cross {
         display: block;
         text-align: right;
@@ -964,6 +999,9 @@ footer {
     * {
         font-size: 8px;
     }
+    #header__nav ul .nav__links--active a {
+        color: #fff;
+    }
     /* banner slider */
     .slider__container {
         height: 23rem;
@@ -989,7 +1027,9 @@ footer {
     .testimonial,
     .contact,
     .members,
-    .contactHeader__title {
+    .contactHeader__title,
+    .blog__content,
+    .blog__title {
         width: calc(100% - 3rem);
     }
     /* abroad study section */
@@ -1062,5 +1102,20 @@ footer {
         padding: 3rem 2rem;
         border-radius: 1rem;
         /* margin: 15rem auto; */
+    }
+    /* blog section */
+    .blog__header {
+        height: 25vh;
+        background: linear-gradient(to top, rgba(243, 126, 32, .36) 0, #eb5e53 100%), url(../images/blog.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 5rem;
+    }
+    .blog__content {
+        grid-template-columns: 1fr;
+    }
+    .blog__posts {
+        display: flex;
+        flex-direction: column;
     }
 }
