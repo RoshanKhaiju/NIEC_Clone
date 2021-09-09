@@ -154,7 +154,7 @@
 .members,
 .contactHeader__title,
 .blog__title,
-.blog__content {
+.blog__content,.testimonial__title,.testimonial__content {
     width: calc(100% - 50rem);
     margin: 0 auto;
 }
@@ -602,7 +602,7 @@ iframe {
 
 /* blog section */
 
-.blog__header {
+.blog__header,.testimonial__header {
     height: 25vh;
     background: linear-gradient(to top, rgba(243, 126, 32, .36) 0, #eb5e53 100%), url(../images/blog.jpg);
     background-repeat: no-repeat;
@@ -731,7 +731,7 @@ iframe {
 }
 
 .contactHeader__title,
-.blog__title {
+.blog__title,.testimonial__title {
     font-size: 4.5rem;
     font-weight: 600;
     color: #ffffff;
