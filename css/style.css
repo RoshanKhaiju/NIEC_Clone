@@ -848,7 +848,7 @@ iframe {
     height: 8rem;
 }
 .testimonials__pagination {
-    margin: 10rem 0 5rem;
+    margin: 5rem 0 ;
 }
 
 .testimonials__pagination ul {
@@ -915,7 +915,7 @@ footer {
     .members,
     .contactHeader__title,
     .blog__content,
-    .blog__title {
+    .blog__title,.testimonials__title,.testimonials__content {
         width: calc(100% - 20rem);
     }
     /* study abroad section */
@@ -964,6 +964,10 @@ footer {
         padding: 3rem 2rem;
         border-radius: 1rem;
         /* margin: 15rem auto; */
+    }
+    /* testimonials page */
+    .testimonials__content__users__description{
+        height: auto;
     }
 }
 
@@ -1094,7 +1098,7 @@ footer {
     .members,
     .contactHeader__title,
     .blog__content,
-    .blog__title {
+    .blog__title,.testimonials__title,.testimonials__content {
         width: calc(100% - 3rem);
     }
     /* abroad study section */
@@ -1182,5 +1186,9 @@ footer {
     .blog__posts {
         display: flex;
         flex-direction: column;
+    }
+    /* testimonials page */
+    .testimonials__content__users__description{
+        height: auto;
     }
 }

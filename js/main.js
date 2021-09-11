@@ -1,7 +1,7 @@
 // sticky menu-bar
 window.addEventListener('scroll', function() {
     let navbar = document.getElementById('header__nav');
-    if (window.pageYOffset >= 1) {
+    if (window.pageYOffset >= 55) {
         navbar.classList.add('sticky');
     } else {
         navbar.classList.remove('sticky');
