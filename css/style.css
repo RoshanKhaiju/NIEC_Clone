@@ -154,7 +154,7 @@
 .members,
 .contactHeader__title,
 .blog__title,
-.blog__content,.testimonials__title,.testimonials__content {
+.blog__content,.testimonials__title,.testimonials__content,.galleries__title,.galleries__content {
     width: calc(100% - 50rem);
     margin: 0 auto;
 }
@@ -602,7 +602,7 @@ iframe {
 
 /* blog section */
 
-.blog__header,.testimonial__header {
+.blog__header,.testimonial__header,.galleries__header {
     height: 25vh;
     background: linear-gradient(to top, rgba(243, 126, 32, .36) 0, #eb5e53 100%), url(../images/blog.jpg);
     background-repeat: no-repeat;
@@ -731,7 +731,7 @@ iframe {
 }
 
 .contactHeader__title,
-.blog__title,.testimonials__title{
+.blog__title,.testimonials__title,.galleries__title{
     font-size: 4.5rem;
     font-weight: 600;
     color: #ffffff;
@@ -878,6 +878,32 @@ iframe {
     list-style: none;
 }
 
+/* gallery page section */
+.galleries__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-rows: repeat(3, 30rem);
+    grid-gap:3rem;
+    padding-bottom:5rem;
+}
+.galleries__img{
+    position: relative;
+}
+.galleries__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: brightness(.7);
+}
+.galleries__img__content{
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+    z-index: 5;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 /* footer seciton */
 
@@ -915,7 +941,7 @@ footer {
     .members,
     .contactHeader__title,
     .blog__content,
-    .blog__title,.testimonials__title,.testimonials__content {
+    .blog__title,.testimonials__title,.testimonials__content,.galleries__title,.galleries__content {
         width: calc(100% - 20rem);
     }
     /* study abroad section */
@@ -968,6 +994,14 @@ footer {
     /* testimonials page */
     .testimonials__content__users__description{
         height: auto;
+    }
+    /* gallery page section */
+    .galleries__content{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
+    }
+    .galleries__img__content{
+        font-size: 2.5rem;
+        right: 1.2rem;
     }
 }
 
@@ -1098,7 +1132,7 @@ footer {
     .members,
     .contactHeader__title,
     .blog__content,
-    .blog__title,.testimonials__title,.testimonials__content {
+    .blog__title,.testimonials__title,.testimonials__content,.galleries__title,.galleries__content {
         width: calc(100% - 3rem);
     }
     /* abroad study section */
@@ -1190,5 +1224,13 @@ footer {
     /* testimonials page */
     .testimonials__content__users__description{
         height: auto;
+    }
+     /* gallery page section */
+     .galleries__content{
+        grid-template-columns: 1fr;
+    }
+    .galleries__img__content{
+        font-size: 2.5rem;
+        right: 2rem;
     }
 }
