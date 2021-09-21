@@ -161,7 +161,8 @@
 .galleries__content,
 .about__title,
 .about__content,
-.about__links {
+.about__links,.overview__content,
+.overview__header__title {
     width: calc(100% - 50rem);
     margin: 0 auto;
 }
@@ -612,7 +613,7 @@ iframe {
 .blog__header,
 .testimonial__header,
 .galleries__header,
-.about__header {
+.about__header,.overview__header {
     height: 25vh;
     background: linear-gradient(to top, rgba(243, 126, 32, .36) 0, #eb5e53 100%), url(../images/blog.jpg);
     background-repeat: no-repeat;
@@ -744,7 +745,7 @@ iframe {
 .blog__title,
 .testimonials__title,
 .galleries__title,
-.about__title {
+.about__title,.overview__header__title {
     font-size: 4.5rem;
     font-weight: 600;
     color: #ffffff;
@@ -1024,6 +1025,49 @@ iframe {
     right: 2rem;
 }
 
+/* test preparation section */
+.overview__content__title{
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #f8883d;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 3rem;
+}
+.overview__content__post__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.overview__content__post__box__image,
+.overview__content__post__box__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin: 3rem 0;
+}
+.overview__content__post__box__description{
+    align-items: flex-start;
+}
+.overview__content__post__box__image img{
+    width: 100%;
+}
+.overview__content__post__box__description p,
+.overview__content__post__box__description p strong{
+font-size: 1.6rem;
+color: rgba(0, 0, 0, 0.6);
+}
+.overview__content__post__box__description p span{
+    font-size: 3rem;
+    color: #333333;
+    font-weight: 500;
+}
+.flex-order{
+    order: 2;
+}
+.overview__gallery{
+    margin-bottom: 8rem;
+}
 
 /* footer seciton */
 
@@ -1068,7 +1112,9 @@ footer {
     .galleries__content,
     .about__title,
     .about__content,
-    .about__links {
+    .about__links,
+    .overview__header__title,
+    .overview__content {
         width: calc(100% - 20rem);
     }
     /* study abroad section */
@@ -1130,6 +1176,18 @@ footer {
         font-size: 2.5rem;
         right: 1.2rem;
     }
+    /* test preparation section */
+    .overview__header__title{
+        font-size: 4rem;
+    }
+.overview__content__post__box__image,
+.overview__content__post__box__description{
+    padding: 2rem;
+    margin: 3rem 0;
+}
+.overview__content__post__box__image{
+    align-items: flex-start;
+}
 }
 
 
@@ -1220,6 +1278,10 @@ footer {
     .login {
         height: 60vh;
     }
+    /* test preparation section */
+    .overview__header__title{
+        font-size: 3.2rem;
+    }
 }
 
 
@@ -1266,7 +1328,9 @@ footer {
     .galleries__content,
     .about__title,
     .about__content,
-    .about__links {
+    .about__links,
+    .overview__content,
+    .overview__header__title {
         width: calc(100% - 3rem);
     }
     /* abroad study section */
@@ -1380,5 +1444,41 @@ footer {
     .about__links {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 25rem);
+    }
+    /* test preparation section */
+    .overview__header__title{
+        font-size: 2.8rem;
+    }
+    .overview__content__title{
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-align: center;
+        color: #f8883d;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 3rem;
+    }
+    .overview__content__post__box{
+        display: block;
+    }
+    .overview__content__post__box__image,
+    .overview__content__post__box__description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 2rem 0;
+    }
+    .overview__content__post__box__image img{
+        width: 100%;
+    }
+    .overview__content__post__box__description p,
+    .overview__content__post__box__description p strong{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
+    }
+    .overview__content__post__box__description p span{
+        font-size: 3rem;
+        color: #333333;
+        font-weight: 500;
     }
 }
