@@ -757,14 +757,16 @@ iframe {
 
 /* login section */
 
-.login {
+.login,
+.register {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login__box {
+.login__box,
+.register__box {
     min-width: 50rem;
     margin: 0 auto;
     box-shadow: 0 0 .5rem 0 #ccc;
@@ -773,18 +775,21 @@ iframe {
     /* margin: 15rem auto; */
 }
 
-.login__title {
+.login__title,
+.register__title {
     font-size: 2.6rem;
     font-weight: bold;
     text-align: center;
     margin: 1.5rem 0 3rem;
 }
 
-.login__box form label {
+.login__box form label,
+.register__box form label {
     font-size: 1.6rem;
 }
 
-.login__box form input {
+.login__box form input,
+.register__box form input {
     width: 100%;
     padding: 1rem;
     font-size: 1.4rem;
@@ -804,12 +809,14 @@ iframe {
     margin-left: .5rem;
 }
 
-.login__box form input[type='submit'] {
+.login__box form input[type='submit'],
+.register__box form input[type='submit'] {
     background-color: #ffffff;
     color: #f37a28;
 }
 
-.login__box form input[type='submit']:hover {
+.login__box form input[type='submit']:hover,
+.register__box form input[type='submit']:hover {
     cursor: pointer;
     color: #ffffff;
     background-color: #ff394c;
@@ -1208,13 +1215,18 @@ footer {
         font-size: 4rem;
     }
     /* login section */
-    .login {
+    .login,
+    .register {
         height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .login__box {
+    .register{
+        height: 90vh;
+    }
+    .login__box,
+    .register__box {
         min-width: 50%;
         margin: 0 auto;
         box-shadow: 0 0 .5rem 0 #ccc;
@@ -1336,6 +1348,9 @@ footer {
     .login {
         height: 60vh;
     }
+    .register{
+        height: 80vh;
+    }
     /* test preparation section */
     .overview__header__title{
         font-size: 3.2rem;
@@ -1448,13 +1463,18 @@ footer {
         font-size: 3.5rem;
     }
     /* login section */
-    .login {
+    .login,
+    .register {
         height: 55vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .login__box {
+    .register{
+        height: 75vh;
+    }
+    .login__box,
+    .register__box {
         min-width: 90%;
         margin: 0 auto;
         box-shadow: 0 0 .5rem 0 #ccc;
